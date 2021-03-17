@@ -16,8 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQt-8l-9Ar">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dse-lV-bTt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vtj-Q8-wv1">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="812"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -82,10 +91,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="NQt-8l-9Ar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1m2-aF-GnL"/>
+                            <constraint firstItem="NQt-8l-9Ar" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Bll-mD-512"/>
                             <constraint firstItem="Vtj-Q8-wv1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KZz-zY-Xbg"/>
-                            <constraint firstItem="Vtj-Q8-wv1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qhg-Af-XVw"/>
                             <constraint firstItem="Vtj-Q8-wv1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RnL-qk-FkV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vtj-Q8-wv1" secondAttribute="bottom" id="yTv-vQ-GIv"/>
+                            <constraint firstItem="Vtj-Q8-wv1" firstAttribute="top" secondItem="NQt-8l-9Ar" secondAttribute="bottom" id="bh4-wf-hut"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NQt-8l-9Ar" secondAttribute="trailing" id="iUH-rY-gLu"/>
+                            <constraint firstAttribute="bottom" secondItem="Vtj-Q8-wv1" secondAttribute="bottom" id="yTv-vQ-GIv"/>
                         </constraints>
                     </view>
                     <connections>
